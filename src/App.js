@@ -1,6 +1,7 @@
 import React from 'react';
 import ItemCard from './components/ItemCard';
 import './App.css';
+import Footer from './components/Footer';
 
 const sampleProducts = [
   {
@@ -80,14 +81,17 @@ const sampleProducts = [
 
 function App() {
   return (
-    <div className="info">
-      <h1>Spring Sale Deal Catalog</h1>
-      <div className="container-info">
-        {sampleProducts.map((product, index) => (
-          <ItemCard key={index} {...product} />
-        ))}
+    <>
+      <div className="info">
+        <h1>Spring Sale Deal Catalog</h1>
+        <div className="container-info">
+          {sampleProducts.map((product, index) => (
+            <ItemCard key={index} {...product} />
+          ))}
+        </div>
       </div>
-    </div>
+      <Footer />
+    </>
   );
 }
 
