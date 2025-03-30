@@ -16,3 +16,11 @@
   overflow-y: auto;
   font-size: large;
 }
+
+.logo {
+  width: 220px;
+  margin-bottom: 10px;
+  &:hover {
+    transform: scale(1.05);
+  }
+}

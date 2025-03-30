@@ -83,6 +83,14 @@ function App() {
   return (
     <>
       <div className="info">
+        <a href="https://www.linkedin.com/in/john-hagens-55b15212a/" target="_blank" rel="noopener noreferrer">
+          <img
+            src="/logo512.png"
+            alt="Logo"
+            className="logo"
+          />
+        </a>
+
         <h1>Spring Sale Deal Catalog</h1>
         <div className="container-info">
           {sampleProducts.map((product, index) => (
